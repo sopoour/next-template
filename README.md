@@ -4,12 +4,12 @@
 
 ### Tech stack
 
-1. styled-components for styling with global styles and theme
-2. next.js and react
-3. custom hooks for data fetching, media queries and more to come
-4. basic components (Typography, Date, MaxWidthContainer)
-5. layout set-up
-6. more utils, hooks and components will be added
+1. next.js and react written in Typescript
+2. styled-components for styling with global styles and theme
+4. custom hooks for data fetching, media queries and more to come
+5. basic components (Typography, Date, MaxWidthContainer)
+6. layout set-up
+7. more utils, hooks and components will be added
 
 
 ### Main packages
