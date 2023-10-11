@@ -1,12 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
+import { montserrat } from './fonts';
 
 export const GlobalStyle = createGlobalStyle`
 
 html {
   color: black;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: ${montserrat.style.fontFamily};
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -51,9 +52,12 @@ a {
   text-decoration: none;
   font-size: inherit;
   outline: none;
+  :focus {
+    outline: 3px solid ${theme.colors.accent.pink}
+  }
 }
 button {
-  font-family: "Inter", sans-serif;
+  font-family: ${montserrat.style.fontFamily};
   overflow: visible;
   cursor: pointer;
 }
@@ -65,6 +69,9 @@ a {
 p {
   font-size: 16px;
   line-height: 1.25;
+  :focus {
+    outline: 3px solid ${theme.colors.accent.pink}
+  }
 }
 
 button::-moz-focus-inner {
