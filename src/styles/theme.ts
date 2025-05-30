@@ -18,6 +18,9 @@ const theme = {
       green: '#30FF7F',
     },
   },
+  filters: {
+    backdrop: 'blur(8px)',
+  }
 } as const;
 
 export default theme;

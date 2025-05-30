@@ -3,6 +3,7 @@ import React, { FC, ReactNode } from 'react';
 import { styled } from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
+import Sidebar from '../Sidebar';
 
 const Root = styled.div`
   min-height: 100vh;
@@ -24,6 +25,7 @@ type Props = {
 
 const Layout: FC<Props> = ({ children }) => (
   <Root>
+    <Sidebar>Some content</Sidebar>
     <Header />
     <MainLayout>{children}</MainLayout>
     <Footer />
