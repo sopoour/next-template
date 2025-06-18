@@ -28,12 +28,12 @@ const Home: NextPage = () => {
   return (
     <Root>
       <TopWrapper>
-        <Typography textalign="center" as="h1">
+        <Typography $textalign="center" as="h1">
           Some title
         </Typography>
       </TopWrapper>
       <DetailContainer>
-        <Typography textalign="center">Some text</Typography>
+        <Typography $textalign="center">Some text</Typography>
       </DetailContainer>
     </Root>
   );
